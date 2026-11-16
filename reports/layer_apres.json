@@ -1,0 +1,39 @@
+{
+    "gradient":  {
+                     "maxValue":  100,
+                     "minValue":  0,
+                     "colors":  [
+                                    "#ff6666",
+                                    "#ffe766",
+                                    "#66ff66"
+                                ]
+                 },
+    "domain":  "enterprise-attack",
+    "name":  "Couverture lab (detecte_apres)",
+    "techniques":  [
+                       {
+                           "comment":  "Reg.EXE : regles communautaires / PowerShell : ma regle run_key_powershell",
+                           "score":  100,
+                           "techniqueID":  "T1547.001"
+                       },
+                       {
+                           "comment":  "Local Accounts Discovery / Net.EXE Execution / Potential Reconnaissance For Cached Credentials Via Cmdkey.EXE",
+                           "score":  100,
+                           "techniqueID":  "T1087.001"
+                       },
+                       {
+                           "comment":  "Scheduled Task Creation Via Schtasks.EXE / Suspicious Schtasks Schedule Types",
+                           "score":  100,
+                           "techniqueID":  "T1053.005"
+                       },
+                       {
+                           "comment":  "File Download Via Bitsadmin / File Download Via Bitsadmin To A Suspicious Target Folder / Potentially Suspicious PowerShell Child Processes / Windows Shell/Scripting Processes Spawning Suspicious Programs",
+                           "score":  100,
+                           "techniqueID":  "T1197"
+                       }
+                   ],
+    "versions":  {
+                     "layers":  "4.5",
+                     "navigator":  "5.0.0"
+                 }
+}

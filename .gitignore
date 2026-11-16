@@ -1,0 +1,5 @@
+tools/
+*.evtx
+evidence/
+reports/processus.csv
+reports/avant_detections.csv

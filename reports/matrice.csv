@@ -1,0 +1,5 @@
+technique,detecte_avant,detecte_apres,regle
+T1547.001,Partiel,Oui,Reg.EXE : regles communautaires / PowerShell : ma regle run_key_powershell
+T1087.001,Oui,Oui,Local Accounts Discovery / Net.EXE Execution / Potential Reconnaissance For Cached Credentials Via Cmdkey.EXE
+T1053.005,Oui,Oui,Scheduled Task Creation Via Schtasks.EXE / Suspicious Schtasks Schedule Types
+T1197,Oui,Oui,File Download Via Bitsadmin / File Download Via Bitsadmin To A Suspicious Target Folder / Potentially Suspicious PowerShell Child Processes / Windows Shell/Scripting Processes Spawning Suspicious Programs

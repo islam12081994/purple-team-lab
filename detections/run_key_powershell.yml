@@ -1,0 +1,22 @@
+title: Valeur de cle Run ajoutee par PowerShell
+id: e5e77ee9-7fea-46e2-8f31-b2fd9df6656a
+status: experimental
+description: Detecte une valeur ajoutee dans une cle Run par powershell.exe (T1547.001)
+author: Ons
+date: 2026-11-12
+tags:
+  - attack.persistence
+  - attack.t1547.001
+logsource:
+  category: registry_set
+  product: windows
+detection:
+  selection:
+    TargetObject|contains: '\CurrentVersion\Run\'
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+  condition: selection
+falsepositives:
+  - Script d installation legitime
+level: medium
